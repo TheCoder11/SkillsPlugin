@@ -1,0 +1,20 @@
+name: Skills
+version: '${project.version}'
+main: com.somemone.skills.Skills
+api-version: 1.17
+
+commands:
+  myskills:
+    usage: /myskills
+    description: Displays and manages your skills
+    aliases: [ms, mskills]
+
+  giveskill:
+    usage: /giveskill <player> <main|special> <id>
+    description: Gives player a skill
+    permission: skills.giveskill
+
+permissions:
+  skills.giveskill:
+    description: Gives player ability to give players skills
+    default: op
